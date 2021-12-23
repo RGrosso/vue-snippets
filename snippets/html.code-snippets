@@ -1,0 +1,42 @@
+{
+    "vfor": {
+        "prefix": "vfor",
+        "body": ["v-for=\"(${1:item}) in ${2:items}\" :key=\"${3:index}\""],
+        "description": "Vue for loop"
+    },
+    "vfori": {
+        "prefix": "vfori",
+        "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""],
+        "description": "Vue for loop"
+    },
+    "vif": {
+        "prefix": "vif",
+        "body": ["v-if=\"${1:condition}\""],
+        "description": "Vue if"
+    },
+    "vifel": {
+        "prefix": "vifel",
+        "body": ["v-else-if=\"${1:condition}\""],
+        "description": "Vue if"
+    },
+    "vel": {
+        "prefix": "vel",
+        "body": ["v-else"],
+        "description": "Vue else"
+    },
+    "component": {
+        "prefix": "component",
+        "body": ["<component :is=\"${1:componentId}\"></component>$0"],
+        "description": "Vue component element"
+    },
+    "routerlink": {
+        "prefix": "routerlink",
+        "body": ["<router-link $1>$2</router-link>$0"],
+        "description": "Vue router link element"
+    },
+    "routerlinkto": {
+        "prefix": "routerlinkto",
+        "body": ["<router-link to=\"$1\">$2</router-link>$0"],
+        "description": "Vue router link element with to attribute"
+    }
+}

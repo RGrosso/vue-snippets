@@ -1,0 +1,28 @@
+{
+    "name": "rg-vue-snippets",
+    "displayName": "RG Vue Snippets",
+    "description": "Vue code snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "vue",
+                "path": "./snippets/vue.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.code-snippets"
+            }
+        ]
+    }
+}

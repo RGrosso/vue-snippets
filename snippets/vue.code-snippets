@@ -1,0 +1,82 @@
+{
+    "vss": {
+        "prefix": "vss",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t$0",
+            "\t</div>",
+            "</template>",
+            "",
+            "<script setup>",
+            "$1",
+            "</script>",
+            ""
+        ],
+        "description": "Vue script setup"
+    },
+    "vs": {
+        "prefix": "vs",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t$1",
+            "\t</div>",
+            "</template>",
+            "\n<script>",
+            "export default { ",
+            "\tsetup() {",
+            "\t\t$0",
+            "\t},",
+            "};",
+            "</script>",
+            ""
+        ],
+        "description": "Vue setup"
+    },
+    "vsn": {
+        "prefix": "vsn",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t$1",
+            "\t</div>",
+            "</template>",
+            "\n<script>",
+            "export default { ",
+            "\tname: \"$TM_FILENAME_BASE\",",
+            "\tsetup() {",
+            "\t\t$0",
+            "\t},",
+            "};",
+            "</script>",
+            ""
+        ],
+        "description": "Vue setup named"
+    },
+    "style": {
+        "prefix": "style",
+        "body": ["<style lang=\"scss\" scoped>", "\t$0", "</style>"],
+        "description": "SCSS style tag"
+    },
+    "stylelang": {
+        "prefix": "stylelang",
+        "body": ["<style lang=\"$1\" scoped>", "\t$0", "</style>"],
+        "description": "SCSS style tag"
+    },
+    "script": {
+        "prefix": "script",
+        "body": ["<script>", "export default {", "\t$0", "}", "</script>"],
+        "description": "Script element"
+    },
+    "scriptname": {
+        "prefix": "scriptname",
+        "body": ["<script>", "export default {", "\tname: \"$TM_FILENAME_BASE\",", "\t$0", "}", "</script>"],
+        "description": "Script element"
+    },
+    "template": {
+        "prefix": "template",
+        "body": ["<template>", "\t<${1:div}$2>", "\t\t$0", "\t</${1:div}>", "</template>"],
+        "description": "Vue template element"
+    }
+}
