@@ -57,22 +57,27 @@
     "style": {
         "prefix": "style",
         "body": ["<style lang=\"scss\" scoped>", "\t$0", "</style>"],
-        "description": "SCSS style tag"
+        "description": "Style tag SCSS and scoped"
     },
     "stylelang": {
         "prefix": "stylelang",
         "body": ["<style lang=\"$1\" scoped>", "\t$0", "</style>"],
-        "description": "SCSS style tag"
+        "description": "Style tag custom lang and scoped"
     },
     "script": {
         "prefix": "script",
         "body": ["<script>", "export default {", "\t$0", "}", "</script>"],
-        "description": "Script element"
+        "description": "Script element with export default"
+    },
+    "scriptsetup": {
+        "prefix": "scriptsetup",
+        "body": ["<script setup>", "</script>"],
+        "description": "Script setup element"
     },
     "scriptname": {
         "prefix": "scriptname",
         "body": ["<script>", "export default {", "\tname: \"$TM_FILENAME_BASE\",", "\t$0", "}", "</script>"],
-        "description": "Script element"
+        "description": "Script element with export default named"
     },
     "template": {
         "prefix": "template",

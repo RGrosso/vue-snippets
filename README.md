@@ -1,65 +1,58 @@
-# rg-vue-snippets README
+# RG Vue Snippets
 
-This is the README for your extension "rg-vue-snippets". After writing up a brief description, we recommend including the following sections.
+This extension is a Vue 3 Snippets extension for Visual Studio Code.
 
-## Features
+## Snippets
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+There are three sets of snippets available for Vue, Vue JavaScript and Vue Template.
 
-For example if there is an image subfolder under your extension project workspace:
+### Vue Templates
 
-\!\[feature X\]\(images/feature-x.png\)
+| Prefix      | Snippet Content                          |
+| ----------- | ---------------------------------------- |
+| vss         | Vue Script Setup                         |
+| vs          | Vue Setup                                |
+| vsn         | Vue Setup named                          |
+| style       | Style tag SCSS and scoped                |
+| stylelang   | Style tag custom lang and scoped         |
+| script      | Script element with export default       |
+| scriptsetup | Script setup element                     |
+| scriptname  | Script element with export default named |
+| template    | Vue template element                     |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Vue JavaScript
 
-## Requirements
+| Prefix            | Snippet Content                                               |
+| ----------------- | ------------------------------------------------------------- |
+| ifv               | `Import from Vue`                                             |
+| reactive          | `const obj = reactive({});`                                   |
+| ref               | `const foo = ref({});`                                        |
+| computed          | `const foo = computed(() => {});`                             |
+| watch             | `watch(foo, () => {});`                                       |
+| watchfull         | `watch(foo, (newValue, prevValue) => {});`                    |
+| setup             | `setup() { }`                                                 |
+| vdimport          | `import ComponentName from "@/components/ComponentName.vue";` |
+| vimport           | `import ComponentName from "./components/ComponentName.vue";` |
+| onBeforeMount     | `onBeforeMount(() => {});`                                    |
+| onMounted         | `onMounted(() => {});`                                        |
+| onBeforeUpdate    | `onBeforeUpdate(() => {});`                                   |
+| onUpdated         | `onUpdated(() => {});`                                        |
+| onBeforeUnmount   | `onBeforeUnmount(() => {});`                                  |
+| onUnmounted       | `onUnmounted(() => {});`                                      |
+| onErrorCaptured   | `onErrorCaptured(() => {});`                                  |
+| onRenderTracked   | `onRenderTracked(() => {});`                                  |
+| onRenderTriggered | `onRenderTriggered(() => {});`                                |
+| dprops            | `const props = defineProps({}); `                             |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Vue Template
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+| Prefix       | Snippet Content                               |
+| ------------ | --------------------------------------------- |
+| vfor         | `v-for="(item) in items" :key="index"`        |
+| vfori        | `v-for="(item, index) in items" :key="index"` |
+| vif          | `v-if="condition"`                            |
+| vifel        | `v-else-if="condition"`                       |
+| vel          | `v-else`                                      |
+| component    | `<component :is="componentId" />`             |
+| routerlink   | `<router-link> </router-link>`                |
+| routerlinkto | `<router-link to=" "> </router-link>`         |

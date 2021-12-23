@@ -1,7 +1,7 @@
 {
     "vfor": {
         "prefix": "vfor",
-        "body": ["v-for=\"(${1:item}) in ${2:items}\" :key=\"${3:index}\""],
+        "body": ["v-for=\"(${1:item}) in ${2:items}\" :key=\"${3:key}\""],
         "description": "Vue for loop"
     },
     "vfori": {
@@ -26,7 +26,7 @@
     },
     "component": {
         "prefix": "component",
-        "body": ["<component :is=\"${1:componentId}\"></component>$0"],
+        "body": ["<component :is=\"${1:componentId}\" />$0"],
         "description": "Vue component element"
     },
     "routerlink": {
