@@ -2,6 +2,7 @@
     "name": "rg-vue-snippets",
     "displayName": "RG Vue Snippets",
     "description": "Vue code snippets",
+    "icon": "assets/logo.png",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.63.0"
