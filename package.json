@@ -4,7 +4,7 @@
     "publisher": "RyanGrosso",
     "description": "Vue code snippets",
     "icon": "assets/logo.png",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -19,6 +19,10 @@
             },
             {
                 "language": "javascript",
+                "path": "./snippets/js.code-snippets"
+            },
+            {
+                "language": "typescript",
                 "path": "./snippets/js.code-snippets"
             },
             {

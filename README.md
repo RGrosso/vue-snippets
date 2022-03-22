@@ -13,6 +13,9 @@ There are three sets of snippets available for Vue, Vue JavaScript and Vue Templ
 | vss         | Vue Script Setup                         |
 | vs          | Vue Setup                                |
 | vsn         | Vue Setup named                          |
+| ts-vss      | TypeScript Vue Script Setup              |
+| ts-vs       | TypeScript Vue Setup                     |
+| ts-vsn      | TypeScript Vue Setup named               |
 | style       | Style tag SCSS and scoped                |
 | stylelang   | Style tag custom lang and scoped         |
 | script      | Script element with export default       |
@@ -42,17 +45,18 @@ There are three sets of snippets available for Vue, Vue JavaScript and Vue Templ
 | onErrorCaptured   | `onErrorCaptured(() => {});`                                  |
 | onRenderTracked   | `onRenderTracked(() => {});`                                  |
 | onRenderTriggered | `onRenderTriggered(() => {});`                                |
-| dprops            | `const props = defineProps({}); `                             |
+| defineProps       | `const props = defineProps({}); `                             |
+| defineEmits       | `const props = defineEmits({}); `                             |
 
 ### Vue Template
 
 | Prefix       | Snippet Content                               |
 | ------------ | --------------------------------------------- |
-| vfor         | `v-for="(item) in items" :key="index"`        |
-| vfori        | `v-for="(item, index) in items" :key="index"` |
-| vif          | `v-if="condition"`                            |
-| vifel        | `v-else-if="condition"`                       |
-| vel          | `v-else`                                      |
+| v-for        | `v-for="(item) in items" :key="index"`        |
+| v-for-i      | `v-for="(item, index) in items" :key="index"` |
+| v-if         | `v-if="condition"`                            |
+| v-if-el      | `v-else-if="condition"`                       |
+| v-el         | `v-else`                                      |
 | component    | `<component :is="componentId" />`             |
 | routerlink   | `<router-link> </router-link>`                |
 | routerlinkto | `<router-link to=" "> </router-link>`         |

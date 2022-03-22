@@ -1,26 +1,26 @@
 {
-    "vfor": {
-        "prefix": "vfor",
-        "body": ["v-for=\"(${1:item}) in ${2:items}\" :key=\"${3:key}\""],
+    "v-for": {
+        "prefix": "v-for",
+        "body": ["v-for=\"(${1:item}) in ${2:items}\" :key=\"${3}\""],
         "description": "Vue for loop"
     },
-    "vfori": {
-        "prefix": "vfori",
+    "v-for-i": {
+        "prefix": "v-for-i",
         "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""],
         "description": "Vue for loop"
     },
     "vif": {
-        "prefix": "vif",
+        "prefix": "v-if",
         "body": ["v-if=\"${1:condition}\""],
         "description": "Vue if"
     },
-    "vifel": {
-        "prefix": "vifel",
+    "v-if-el": {
+        "prefix": "v-if-el",
         "body": ["v-else-if=\"${1:condition}\""],
         "description": "Vue if"
     },
-    "vel": {
-        "prefix": "vel",
+    "v-el": {
+        "prefix": "v-el",
         "body": ["v-else"],
         "description": "Vue else"
     },

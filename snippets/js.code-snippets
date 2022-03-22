@@ -31,8 +31,18 @@
     },
     "setup": {
         "prefix": "setup",
-        "body": ["setup($2) {", "\t$1", "};$0"],
+        "body": ["setup($2) {", "\t$1", "}$0"],
         "description": "Vue setup"
+    },
+    "inject": {
+        "prefix": "inject",
+        "body": ["const $1 = inject($2);$0"],
+        "description": "Vue inject"
+    },
+    "provide": {
+        "prefix": "provide",
+        "body": ["provide($1, $2);$0"],
+        "description": "Vue inject"
     },
     "vdimport": {
         "prefix": "vdimport",
@@ -89,9 +99,14 @@
         "body": ["onRenderTriggered(() => {$1});$0"],
         "description": "Vue on render triggered"
     },
-    "dprops": {
-        "prefix": "dprops",
+    "defineprops": {
+        "prefix": "defineProps",
         "body": ["const ${2:props} = defineProps({$1});$0"],
         "description": "Vue define props"
+    },
+    "defineEmits": {
+        "prefix": "defineEmits",
+        "body": ["const ${2:props} = defineEmits({$1});$0"],
+        "description": "Vue define emits"
     }
 }
