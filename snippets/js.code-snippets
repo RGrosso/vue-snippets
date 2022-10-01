@@ -1,112 +1,22 @@
 {
-    "ifv": {
-        "prefix": "ifv",
-        "body": ["import { $1 } from \"vue\";$0"],
-        "description": "Import from Vue"
-    },
-    "reactive": {
+    "Vue Reactive": {
         "prefix": "reactive",
-        "body": ["const ${1:obj} = reactive({$2});$0"],
+        "body": ["const ${1:foo} = reactive({$2});$0"],
         "description": "Vue reactive"
     },
-    "ref": {
+    "Vue Ref": {
         "prefix": "ref",
-        "body": ["const $1 = ref($2);$0"],
+        "body": ["const ${1:foo}  = ref($2);$0"],
         "description": "Vue ref"
     },
-    "computed": {
-        "prefix": "computed",
-        "body": ["const $1 = computed(() => {$2});$0"],
-        "description": "Vue computed"
-    },
-    "watch": {
-        "prefix": "watch",
-        "body": ["watch($1, () => {$2});$0"],
-        "description": "Vue watch"
-    },
-    "watchfull": {
-        "prefix": "watchfull",
-        "body": ["watch($1, (newValue, prevValue) => {$2});$0"],
-        "description": "Vue watch full"
-    },
-    "setup": {
-        "prefix": "setup",
-        "body": ["setup($2) {", "\t$1", "}$0"],
-        "description": "Vue setup"
-    },
-    "inject": {
-        "prefix": "inject",
-        "body": ["const $1 = inject($2);$0"],
-        "description": "Vue inject"
-    },
-    "provide": {
-        "prefix": "provide",
-        "body": ["provide($1, $2);$0"],
-        "description": "Vue inject"
-    },
-    "vdimport": {
-        "prefix": "vdimport",
-        "body": ["import ${1:ComponentName} from \"@/components/${1:ComponentName}.vue\";$0"],
-        "description": "Vue on render triggered"
-    },
-    "vimport": {
-        "prefix": "vimport",
-        "body": ["import ${1:ComponentName} from \"./components/${1:ComponentName}.vue\";$0"],
-        "description": "Vue on render triggered"
-    },
-    "onBeforeMount": {
-        "prefix": "onBeforeMount",
-        "body": ["onBeforeMount(() => {$1});$0"],
-        "description": "Vue on before mounted"
-    },
-    "onMounted": {
-        "prefix": "onMounted",
-        "body": ["onMounted(() => {$1});$0"],
-        "description": "Vue on mounted"
-    },
-    "onBeforeUpdate": {
-        "prefix": "onBeforeUpdate",
-        "body": ["onBeforeUpdate(() => {$1});$0"],
-        "description": "Vue on before update"
-    },
-    "onUpdated": {
-        "prefix": "onUpdated",
-        "body": ["onUpdated(() => {$1});$0"],
-        "description": "Vue on updated"
-    },
-    "onBeforeUnmount": {
-        "prefix": "onBeforeUnmount",
-        "body": ["onBeforeUnmount(() => {$1});$0"],
-        "description": "Vue on before unmount"
-    },
-    "onUnmounted": {
-        "prefix": "onUnmounted",
-        "body": ["onUnmounted(() => {$1});$0"],
-        "description": "Vue on unmounted"
-    },
-    "onErrorCaptured": {
-        "prefix": "onErrorCaptured",
-        "body": ["onErrorCaptured(() => {$1});$0"],
-        "description": "Vue on error captured"
-    },
-    "onRenderTracked": {
-        "prefix": "onRenderTracked",
-        "body": ["onRenderTracked(() => {$1});$0"],
-        "description": "Vue on render tracked"
-    },
-    "onRenderTriggered": {
-        "prefix": "onRenderTriggered",
-        "body": ["onRenderTriggered(() => {$1});$0"],
-        "description": "Vue on render triggered"
-    },
-    "defineprops": {
+    "Vue defineProps": {
         "prefix": "defineProps",
         "body": ["const ${2:props} = defineProps({$1});$0"],
         "description": "Vue define props"
     },
-    "defineEmits": {
+    "Vue defineEmits": {
         "prefix": "defineEmits",
-        "body": ["const ${2:props} = defineEmits({$1});$0"],
+        "body": ["const ${2:emit} = defineEmits([$1]);$0"],
         "description": "Vue define emits"
     }
 }

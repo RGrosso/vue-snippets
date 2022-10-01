@@ -1,40 +1,42 @@
 {
-    "v-for": {
+    "Vue v-for loop": {
         "prefix": "v-for",
         "body": ["v-for=\"(${1:item}) in ${2:items}\" :key=\"${3}\""],
         "description": "Vue for loop"
     },
-    "v-for-i": {
+    "Vue v-for loop with index": {
         "prefix": "v-for-i",
-        "body": ["v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""],
-        "description": "Vue for loop"
+        "body": [
+            "v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\""
+        ],
+        "description": "Vue for loop with index"
     },
-    "vif": {
+    "Vue v-if": {
         "prefix": "v-if",
         "body": ["v-if=\"${1:condition}\""],
         "description": "Vue if"
     },
-    "v-if-el": {
+    "Vue v-else-if": {
         "prefix": "v-if-el",
         "body": ["v-else-if=\"${1:condition}\""],
         "description": "Vue if"
     },
-    "v-el": {
+    "Vue v-else": {
         "prefix": "v-el",
         "body": ["v-else"],
         "description": "Vue else"
     },
-    "component": {
+    "Vue Component Element": {
         "prefix": "component",
         "body": ["<component :is=\"${1:componentId}\" />$0"],
         "description": "Vue component element"
     },
-    "routerlink": {
+    "Vue <router-link />": {
         "prefix": "routerlink",
         "body": ["<router-link $1>$2</router-link>$0"],
         "description": "Vue router link element"
     },
-    "routerlinkto": {
+    "Vue <router-link to=\"\"/>": {
         "prefix": "routerlinkto",
         "body": ["<router-link to=\"$1\">$2</router-link>$0"],
         "description": "Vue router link element with to attribute"

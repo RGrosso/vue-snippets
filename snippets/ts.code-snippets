@@ -1,0 +1,23 @@
+{
+    "Vue Reactive": {
+        "prefix": "reactive",
+        "body": ["const ${1:foo} = reactive$3({$2});$0"],
+        "description": "Vue reactive"
+    },
+    "Vue Ref": {
+        "prefix": "ref",
+        "body": ["const ${1:foo} = ref$3($2);$0"],
+        "description": "Vue ref"
+    },
+    "Vue defineProps": {
+        "prefix": "defineProps",
+        "body": ["const ${2:props} = defineProps<$1>();$0"],
+        "description": "Vue TypeScript define props",
+        "scope": "typescript"
+    },
+    "Vue defineEmits": {
+        "prefix": "defineEmits",
+        "body": ["const ${2:emit} = defineEmits<$1>();$0"],
+        "description": "Vue define emits"
+    }
+}

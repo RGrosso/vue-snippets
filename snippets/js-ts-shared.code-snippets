@@ -1,0 +1,94 @@
+{
+    "Vue Import from Vue": {
+        "prefix": "ifv",
+        "body": ["import { $1 } from \"vue\";$0"],
+        "description": "Import from Vue"
+    },
+    "Vue Import Component": {
+        "prefix": "vimport",
+        "body": [
+            "import ${1:ComponentName} from \"@/components/${1:ComponentName}.vue\";$0"
+        ],
+        "description": "Vue import component"
+    },
+    "Vue Provide": {
+        "prefix": "provide",
+        "body": ["provide($1, $2);$0"],
+        "description": "Vue inject"
+    },
+    "Vue Inject": {
+        "prefix": "inject",
+        "body": ["const $1 = inject($2);$0"],
+        "description": "Vue inject"
+    },
+    "Vue Watch": {
+        "prefix": "watch",
+        "body": ["watch($1, () => {$2});$0"],
+        "description": "Vue watch"
+    },
+    "Vue Watch (full)": {
+        "prefix": "watchfull",
+        "body": ["watch($1, (newValue, prevValue) => {$2});$0"],
+        "description": "Vue watch full"
+    },
+    "Vue Setup": {
+        "prefix": "setup",
+        "body": ["setup($2) {", "\t$1", "},$0"],
+        "description": "Vue setup"
+    },
+    "Vue Computed": {
+        "prefix": "computed",
+        "body": ["const $1 = computed(() => {$2});$0"],
+        "description": "Vue computed"
+    },
+    "Vue onBeforeMount Lifecycle Hook": {
+        "prefix": "onBeforeMount",
+        "body": ["onBeforeMount(() => {$1});$0"],
+        "description": "Vue on before mounted"
+    },
+    "Vue onMounted Lifecycle Hook": {
+        "prefix": "onMounted",
+        "body": ["onMounted(() => {$1});$0"],
+        "description": "Vue on mounted"
+    },
+    "Vue onBeforeUpdate Lifecycle Hook": {
+        "prefix": "onBeforeUpdate",
+        "body": ["onBeforeUpdate(() => {$1});$0"],
+        "description": "Vue on before update"
+    },
+    "Vue onUpdated Lifecycle Hook": {
+        "prefix": "onUpdated",
+        "body": ["onUpdated(() => {$1});$0"],
+        "description": "Vue on updated"
+    },
+    "Vue onBeforeUnmount Lifecycle Hook": {
+        "prefix": "onBeforeUnmount",
+        "body": ["onBeforeUnmount(() => {$1});$0"],
+        "description": "Vue on before unmount"
+    },
+    "Vue onUnmounted Lifecycle Hook": {
+        "prefix": "onUnmounted",
+        "body": ["onUnmounted(() => {$1});$0"],
+        "description": "Vue on unmounted"
+    },
+    "Vue onErrorCaptured Lifecycle Hook": {
+        "prefix": "onErrorCaptured",
+        "body": ["onErrorCaptured(() => {$1});$0"],
+        "description": "Vue on error captured"
+    },
+    "Vue onRenderTracked Lifecycle Hook": {
+        "prefix": "onRenderTracked",
+        "body": ["onRenderTracked(() => {$1});$0"],
+        "description": "Vue on render tracked"
+    },
+    "Vue onRenderTriggered Lifecycle Hook": {
+        "prefix": "onRenderTriggered",
+        "body": ["onRenderTriggered(() => {$1});$0"],
+        "description": "Vue on render triggered"
+    },
+    "Vue defineExpose": {
+        "prefix": "defineExpose",
+        "body": ["defineExpose({$1});$0"],
+        "description": "Vue define emits"
+    }
+}

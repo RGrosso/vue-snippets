@@ -8,34 +8,34 @@ There are three sets of snippets available for Vue, Vue JavaScript and Vue Templ
 
 ### Vue Templates
 
-| Prefix      | Snippet Content                          |
-| ----------- | ---------------------------------------- |
-| vss         | Vue Script Setup                         |
-| vs          | Vue Setup                                |
-| vsn         | Vue Setup named                          |
-| ts-vss      | TypeScript Vue Script Setup              |
-| ts-vs       | TypeScript Vue Setup                     |
-| ts-vsn      | TypeScript Vue Setup named               |
-| style       | Style tag SCSS and scoped                |
-| stylelang   | Style tag custom lang and scoped         |
-| script      | Script element with export default       |
-| scriptsetup | Script setup element                     |
-| scriptname  | Script element with export default named |
-| template    | Vue template element                     |
+| Prefix         | Snippet Content                          |
+| -------------- | ---------------------------------------- |
+| vss            | Vue Script Setup                         |
+| vs             | Vue Setup                                |
+| vsn            | Vue Setup named                          |
+| ts-vss         | TypeScript Vue Script Setup              |
+| ts-vs          | TypeScript Vue Setup                     |
+| ts-vsn         | TypeScript Vue Setup named               |
+| style          | Style tag SCSS and scoped                |
+| stylelang      | Style tag custom lang and scoped         |
+| script         | Script element with export default       |
+| scriptsetup    | Script setup element                     |
+| ts-scriptsetup | TypeScript Script setup element          |
+| scriptname     | Script element with export default named |
+| template       | Vue template element                     |
 
-### Vue JavaScript
+### Vue JavaScript/TypeScript
 
 | Prefix            | Snippet Content                                               |
 | ----------------- | ------------------------------------------------------------- |
 | ifv               | `Import from Vue`                                             |
-| reactive          | `const obj = reactive({});`                                   |
+| reactive          | `const foo = reactive({});`                                   |
 | ref               | `const foo = ref({});`                                        |
 | computed          | `const foo = computed(() => {});`                             |
 | watch             | `watch(foo, () => {});`                                       |
 | watchfull         | `watch(foo, (newValue, prevValue) => {});`                    |
 | setup             | `setup() { }`                                                 |
-| vdimport          | `import ComponentName from "@/components/ComponentName.vue";` |
-| vimport           | `import ComponentName from "./components/ComponentName.vue";` |
+| vimport           | `import ComponentName from "@/components/ComponentName.vue";` |
 | onBeforeMount     | `onBeforeMount(() => {});`                                    |
 | onMounted         | `onMounted(() => {});`                                        |
 | onBeforeUpdate    | `onBeforeUpdate(() => {});`                                   |
@@ -45,8 +45,23 @@ There are three sets of snippets available for Vue, Vue JavaScript and Vue Templ
 | onErrorCaptured   | `onErrorCaptured(() => {});`                                  |
 | onRenderTracked   | `onRenderTracked(() => {});`                                  |
 | onRenderTriggered | `onRenderTriggered(() => {});`                                |
-| defineProps       | `const props = defineProps({}); `                             |
-| defineEmits       | `const props = defineEmits({}); `                             |
+| defineProps       | `const props = defineProps({});`                              |
+| defineEmits       | `const emit = defineEmits([]);`                               |
+| defineExpose      | `defineExpose({});`                                           |
+
+### Vue JavaScript
+
+| Prefix      | Snippet Content                  |
+| ----------- | -------------------------------- |
+| defineProps | `const props = defineProps({});` |
+| defineEmits | `const emit = defineEmits([]);`  |
+
+### Vue TypeScript
+
+| Prefix      | Snippet Content                  |
+| ----------- | -------------------------------- |
+| defineProps | `const props = defineProps<>();` |
+| defineEmits | `const emit = defineEmits<>();`  |
 
 ### Vue Template
 

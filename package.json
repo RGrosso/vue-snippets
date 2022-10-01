@@ -23,7 +23,15 @@
             },
             {
                 "language": "typescript",
-                "path": "./snippets/js.code-snippets"
+                "path": "./snippets/ts.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js-ts-shared.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/js-ts-shared.code-snippets"
             },
             {
                 "language": "html",

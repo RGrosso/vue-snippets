@@ -1,5 +1,5 @@
 {
-    "vss": {
+    "Vue Script Setup Template": {
         "prefix": "vss",
         "body": [
             "<template>",
@@ -15,7 +15,7 @@
         ],
         "description": "Vue script setup"
     },
-    "vs": {
+    "Vue Setup Template": {
         "prefix": "vs",
         "body": [
             "<template>",
@@ -34,7 +34,7 @@
         ],
         "description": "Vue setup"
     },
-    "vsn": {
+    "Vue Setup Named Template": {
         "prefix": "vsn",
         "body": [
             "<template>",
@@ -54,7 +54,7 @@
         ],
         "description": "Vue setup named"
     },
-    "ts-vss": {
+    "Vue TypeScript Script Setup Template": {
         "prefix": "ts-vss",
         "body": [
             "<template>",
@@ -70,7 +70,7 @@
         ],
         "description": "TypeScript Vue script setup"
     },
-    "ts-vs": {
+    "Vue TypeScript Setup Template": {
         "prefix": "ts-vs",
         "body": [
             "<template>",
@@ -91,7 +91,7 @@
         ],
         "description": "TypeScript Vue setup"
     },
-    "ts-vsn": {
+    "Vue TypeScript Setup Named Template": {
         "prefix": "ts-vsn",
         "body": [
             "<template>",
@@ -113,34 +113,52 @@
         ],
         "description": "Vue setup named"
     },
-    "style": {
+    "Vue Style SCSS Scoped": {
         "prefix": "style",
-        "body": ["<style lang=\"scss\" scoped>", "\t$0", "</style>"],
-        "description": "Style tag SCSS and scoped"
+        "body": ["<style lang=\"scss\" scoped>", "$0", "</style>"],
+        "description": "Vue Style tag SCSS and scoped"
     },
-    "stylelang": {
+    "Vue Style Scoped": {
         "prefix": "stylelang",
-        "body": ["<style lang=\"$1\" scoped>", "\t$0", "</style>"],
-        "description": "Style tag custom lang and scoped"
+        "body": ["<style lang=\"$1\" scoped>", "$0", "</style>"],
+        "description": "Vue Style tag custom lang and scoped"
     },
-    "script": {
+    "Vue Script": {
         "prefix": "script",
         "body": ["<script>", "export default {", "\t$0", "}", "</script>"],
         "description": "Script element with export default"
     },
-    "scriptsetup": {
+    "Vue Script Setup": {
         "prefix": "scriptsetup",
         "body": ["<script setup>", "</script>"],
-        "description": "Script setup element"
+        "description": "Vue Script setup element"
     },
-    "scriptname": {
+    "Vue TypeScript Script Setup": {
+        "prefix": "ts-scriptsetup",
+        "body": ["<script setup lang=\"ts\">", "</script>"],
+        "description": "Vue TypeScript Script setup element"
+    },
+    "Vue Script with name": {
         "prefix": "scriptname",
-        "body": ["<script>", "export default {", "\tname: \"$TM_FILENAME_BASE\",", "\t$0", "}", "</script>"],
-        "description": "Script element with export default named"
+        "body": [
+            "<script>",
+            "export default {",
+            "\tname: \"$TM_FILENAME_BASE\",",
+            "\t$0",
+            "}",
+            "</script>"
+        ],
+        "description": "Vue Script element with export default named"
     },
-    "template": {
+    "Vue Template Element": {
         "prefix": "template",
-        "body": ["<template>", "\t<${1:div}$2>", "\t\t$0", "\t</${1:div}>", "</template>"],
+        "body": [
+            "<template>",
+            "\t<${1:div}$2>",
+            "\t\t$0",
+            "\t</${1:div}>",
+            "</template>"
+        ],
         "description": "Vue template element"
     }
 }
