@@ -38,5 +38,9 @@
                 "path": "./snippets/html.code-snippets"
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RGrosso/vue-snippets.git"
     }
 }
